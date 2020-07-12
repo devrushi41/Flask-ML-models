@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Fruits Predictor</title>{% endblock %}
+{% block body %}
+<div class="container">
+    <h3 class="center">
+        Fruit Predictor
+    </h3>
+
+    <form action="/fruitspredictor" method="POST" class="center">
+        <div class="row ">
+            <div class="col s12 m4 offset-m4 center">
+                <input type="text" name="mass" id="mass" placeholder="Mass">
+                <input type="text" name="width" id="width" placeholder="Width">
+                <input type="text" name="height" id="height" placeholder="Height">
+                <input type="submit" value="Predict" class="black z-depth-0 btn">
+            </div>
+        </div>
+    </form>
+</div>
+
+{% endblock %}

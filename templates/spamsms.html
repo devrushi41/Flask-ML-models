@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Spam SMS</title>
+
+{% endblock %}
+{% block body %}
+<div class="container">
+    <h3 class="center">
+        Spam SMS Predictor
+    </h3>
+
+    <form action="/spamsms" method="POST" class="center">
+        <div class="row ">
+            <div class="col s12 m4 offset-m4 center">
+                <input type="text" name="message" id="message" placeholder="Message you got">
+                <input type="submit" value="Predict" class="black z-depth-0 btn">
+            </div>
+        </div>
+    </form>
+</div>
+
+{% endblock %}
